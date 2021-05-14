@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     @objc func update() {
-        if(timeLeftInSeconds > 0) {
+        if timeLeftInSeconds > 0 {
             print("\(timeLeftInSeconds) seconds.")
             timeLeftInSeconds -= 1
             let progressPercentage = Float(timeLeftInSeconds) / Float(initialTime)
